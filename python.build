@@ -1,0 +1,10 @@
+#!/bin/bash
+set -e
+
+# Change to the functions source directory
+cd "$(dirname "$0")"
+
+# Install dependencies using pipenv
+pipenv install --ignore-pipfile
+
+cd "$1"
